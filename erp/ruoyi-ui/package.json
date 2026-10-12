@@ -2,7 +2,7 @@
   "name": "erp-ui",
   "version": "3.6.8",
   "description": "ERP企业管理平台",
-  "author": "erp-demo",
+  "author": "ShiroWei",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -21,7 +21,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/y_project/RuoYi-Cloud.git"
+    "url": "https://github.com/ShiroWei/RuoYi-demo.git",
+    "directory": "erp/ruoyi-ui"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "0.4.0",

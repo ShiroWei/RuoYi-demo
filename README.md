@@ -1,6 +1,6 @@
-# OA / ERP 统一仓库
+# RuoYi-demo
 
-本仓库统一管理 OA 与 ERP 两个项目，并保留双方原始 Git 提交历史。目前仅完成仓库整合，两个项目仍独立构建和运行。
+基于若依（RuoYi）的练手与二次开发项目集合，用于持续维护若依相关修改，以及新增基于不同若依架构的系统。目前包含 OA 和 ERP 两个项目，各自独立构建和运行，并保留双方原始 Git 提交历史。
 
 ## 目录
 
@@ -8,19 +8,17 @@
 - [ERP 项目](erp/README.md)：位于 `erp/`，开发约定见 [erp/AGENTS.md](erp/AGENTS.md)。
 
 ```text
-oa-demo/
+RuoYi-demo/
 ├── oa/       # OA Maven 工程与前端
 ├── erp/      # ERP Maven 工程与前端
-└── .git/     # 两个项目共用的 Git 仓库
+└── .git/     # 所有子项目共用的 Git 仓库
 ```
 
 ## 获取代码与开发入口
 
-以下克隆命令适用于统一仓库改动推送之后：
-
 ```bash
-git clone git@github.com:ShiroWei/RuoYi-OA-demo.git oa-demo
-cd oa-demo
+git clone git@github.com:ShiroWei/RuoYi-demo.git RuoYi-demo
+cd RuoYi-demo
 ```
 
 | 操作 | OA | ERP |
@@ -33,13 +31,17 @@ cd oa-demo
 
 统一仓库根目录没有聚合 `pom.xml` 或前端 `package.json`，请在对应项目目录执行构建命令。
 
-构建和启动命令应在对应项目目录执行；前端命令分别在 `oa/ruoyi-ui/`、`erp/ruoyi-ui/` 执行。本次没有合并模块、前端、配置或数据库，也没有解决原有服务端口冲突。
+各子项目独立管理依赖、模块、前端、配置和数据库脚本。当前仅统一 Git 管理，运行时的共享基础设施和服务端口冲突仍按各项目开发指南处理。
 
-新工作区仅包含原仓库 Git 跟踪的文件。本地依赖、构建产物、日志和被忽略的配置仍保留在 `../oa-demo-backup/`、`../erp-demo/`，使用新工作区前需按项目要求准备环境。引用旧绝对路径的外部脚本或 IDE 配置需要另行检查。原项目的 `.github/FUNDING.yml` 保留在各自子目录中；当前没有 Actions workflows。GitHub 的仓库级配置需要放在根 `.github/` 才会被识别，本次没有整合这些配置。
+工作区仅包含 Git 跟踪的文件。本地依赖、构建产物及被忽略的配置需按项目要求准备；外部脚本或 IDE 配置应使用当前目录路径。原项目的 `.github/FUNDING.yml` 保留在各自子目录中；当前没有 Actions workflows。GitHub 的仓库级配置需要放在根 `.github/` 才会被识别。
+
+## 新增若依项目
+
+新系统在仓库根目录建立独立子目录，与 `oa/`、`erp/` 同级，目录名称体现系统用途或架构。各子项目应提供自己的 README、开发约定和构建入口，并在本页目录与开发入口中登记。所有子项目共用根 `.git/`，不在子目录再次初始化 Git。是否共用代码或整合系统，应按具体需求另行决定。
 
 ## Git 历史与远程
 
-统一仓库的远程 `origin` 为 `git@github.com:ShiroWei/RuoYi-OA-demo.git`。本次仅完成本地提交，未推送。
+仓库的远程 `origin` 为 `git@github.com:ShiroWei/RuoYi-demo.git`。
 
 - OA 合并前基线：`628d7399`。
 - ERP 合并前基线：`e4662fa0`。
@@ -47,5 +49,3 @@ cd oa-demo
 - ERP 使用未压缩历史的 `git subtree add` 放入 `erp/`；双方原始提交 ID 均保留。
 
 查看全部历史：`git log --graph --oneline`。查看移动前的文件历史，可使用 `git log --follow -- oa/文件路径`；也可直接通过原始提交 ID 查看原仓库布局下的代码。
-
-审核后的备份清理事项记录在本地 `tasks/todo.md`，该目录已被 Git 忽略。用户审查并推送统一仓库后，需明确批准才能删除 `../oa-demo-backup/` 和 `../erp-demo/`。

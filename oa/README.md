@@ -4,8 +4,8 @@
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">OA协同办公平台</h1>
 <h4 align="center">基于 RuoYi-Cloud 二次开发的以工作流为核心的办公自动化系统（演示项目）</h4>
 <p align="center">
-    <a href="https://github.com/ShiroWei/RuoYi-OA-demo"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
-    <a href="https://github.com/ShiroWei/RuoYi-OA-demo/blob/master/oa/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+    <a href="https://github.com/ShiroWei/RuoYi-demo/tree/master/oa"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
+    <a href="https://github.com/ShiroWei/RuoYi-demo/blob/master/oa/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 </p>
 
 ## 统一仓库中的位置

@@ -4,8 +4,8 @@
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">ERP 企业管理平台</h1>
 <h4 align="center">基于 RuoYi-Cloud 二次开发的进销存生产一体化管理系统（演示项目）</h4>
 <p align="center">
-	<a href="https://github.com/ShiroWei/RuoYi-OA-demo/tree/master/erp"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
-	<a href="https://github.com/ShiroWei/RuoYi-OA-demo/blob/master/erp/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+	<a href="https://github.com/ShiroWei/RuoYi-demo/tree/master/erp"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
+	<a href="https://github.com/ShiroWei/RuoYi-demo/blob/master/erp/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 </p>
 
 ## 统一仓库中的位置

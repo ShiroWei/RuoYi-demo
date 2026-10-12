@@ -1,6 +1,6 @@
 # AGENTS.md
 
-本文件记录本项目（OA 协同办公平台）的开发约定，供 AI 协作时遵守。
+本文件记录统一仓库 `oa/` 子项目（OA 协同办公平台）的开发约定，供 AI 协作时遵守。本文相对路径以 `oa/` 为根目录，后端命令在 `oa/` 执行，前端命令在 `oa/ruoyi-ui/` 执行；Git 操作管理整个统一仓库，暂存时应明确指定项目路径。
 
 ## 提交规范（重要）
 
@@ -29,5 +29,5 @@
 ## 验证方式
 
 - 后端接口验证用 `C:\Users\UP_WEI~1\AppData\Local\Temp\opencode\` 下的 Python 脚本（登录免验证码，token 取 `data.access_token`）。
-- 重启 OA 服务：停对应端口进程 → 重新 `mvn package` → `java -jar ruoyi-modules\ruoyi-xxx\target\ruoyi-modules-xxx.jar`（工作目录仓库根），日志在 `%TEMP%\opencode\services\<name>.log`。
+- 重启 OA 服务：停对应端口进程 → 重新 `mvn package` → `java -jar ruoyi-modules\ruoyi-xxx\target\ruoyi-modules-xxx.jar`（工作目录为统一仓库的 `oa/`），日志在 `%TEMP%\opencode\services\<name>.log`。
 - **Nacos 配置变更必须通过 Nacos 控制台/HTTP API 发布（POST /nacos/v1/cs/configs），直接改 MySQL `ry-config.config_info` 不生效**；Nacos 3.x standalone 实际配置存 `D:\env\nacos-server-3.0.2\data\tenant-config-data`。`sql/ry_config_oa_20260819.sql`、`sql/ry_config_oa_split_20260820.sql`、`sql/ry_config_dedup_20260819.sql` 为仓库初始化/同步脚本。

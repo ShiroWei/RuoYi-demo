@@ -1,12 +1,12 @@
 # OA协同办公平台前端
 
-基于 Vue 2 / Element UI 的前端工程，配合后端微服务使用。
+基于 Vue 2 / Element UI 的前端工程，配合后端微服务使用。位于统一仓库的 `oa/ruoyi-ui/`，项目说明见 [OA README](../README.md)。以下开发命令从统一仓库根目录执行，发布命令在前端目录执行。
 
 ## 开发
 
 ```bash
-# 进入项目目录
-cd ruoyi-ui
+# 从统一仓库根目录进入 OA 前端
+cd oa/ruoyi-ui
 
 # 安装依赖
 npm install

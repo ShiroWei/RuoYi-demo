@@ -1,11 +1,12 @@
+# ERP 企业管理平台前端
+
+本工程位于统一仓库的 `erp/ruoyi-ui/`，项目说明见 [ERP README](../README.md)。以下开发命令从统一仓库根目录执行，发布命令在前端目录执行。
+
 ## 开发
 
 ```bash
-# 克隆项目
-git clone https://gitee.com/y_project/RuoYi-Vue
-
-# 进入项目目录
-cd ruoyi-ui
+# 从统一仓库根目录进入 ERP 前端
+cd erp/ruoyi-ui
 
 # 安装依赖
 npm install

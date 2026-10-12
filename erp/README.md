@@ -4,9 +4,13 @@
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">ERP 企业管理平台</h1>
 <h4 align="center">基于 RuoYi-Cloud 二次开发的进销存生产一体化管理系统（演示项目）</h4>
 <p align="center">
-	<a href="https://github.com/ShiroWei/RuoYi-ERP-demo"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
-	<a href="https://github.com/ShiroWei/RuoYi-ERP-demo/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+	<a href="https://github.com/ShiroWei/RuoYi-OA-demo/tree/master/erp"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
+	<a href="https://github.com/ShiroWei/RuoYi-OA-demo/blob/master/erp/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 </p>
+
+## 统一仓库中的位置
+
+本项目位于统一仓库的 `erp/` 子目录，OA 项目位于同级 `oa/`，两者仍独立构建和运行。仓库说明见 [根 README](../README.md)。本页的模块、SQL 和命令路径均以 `erp/` 为项目根目录；从统一仓库根目录操作时，先执行 `cd erp`，IDEA 应打开 `erp/pom.xml`。
 
 ## 平台简介
 
@@ -118,7 +122,7 @@ flowchart LR
 
 ## 本地开发环境
 
-环境要求：JDK 24+、Maven 3.9+、Node 16/18/20、MySQL 8、Redis、Nacos 3.x。
+环境要求：JDK 24+、Maven 3.9+、Node 16/18/20、MySQL 8、Redis、Nacos 3.x。从统一仓库根目录操作时，先执行 `cd erp`。
 
 **一键脚本**（Windows）：
 

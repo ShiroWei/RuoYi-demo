@@ -5,8 +5,12 @@
 <h4 align="center">基于 RuoYi-Cloud 二次开发的以工作流为核心的办公自动化系统（演示项目）</h4>
 <p align="center">
     <a href="https://github.com/ShiroWei/RuoYi-OA-demo"><img src="https://img.shields.io/badge/RuoYi--Cloud-3.6.8-brightgreen.svg"></a>
-    <a href="https://github.com/ShiroWei/RuoYi-OA-demo/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+    <a href="https://github.com/ShiroWei/RuoYi-OA-demo/blob/master/oa/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
 </p>
+
+## 统一仓库中的位置
+
+本项目位于统一仓库的 `oa/` 子目录，ERP 项目位于同级 `erp/`，两者仍独立构建和运行。仓库说明见 [根 README](../README.md)。本页的模块、SQL 和命令路径均以 `oa/` 为项目根目录；从统一仓库根目录操作时，先执行 `cd oa`，IDEA 应打开 `oa/pom.xml`。
 
 ## 平台简介
 
@@ -167,9 +171,9 @@ docs/                      # 本地开发环境配置文档
 
 | 分支              | 用途                       |
 |:--------------- |:------------------------ |
-| `master`        | **开发主分支**（当前所在），所有功能在此提交 |
-| `dev`           | 已并入 master，不再维护          |
-| `docker-deploy` | docker 一键演示部署            |
+| `master`        | **统一仓库开发主分支**，同时管理 `oa/` 与 `erp/` |
+| `dev`           | 原 OA 历史分支，已并入 master，不再维护 |
+| `docker-deploy` | 原 OA 历史部署分支，未采用统一仓库目录布局 |
 
 ## 上游来源
 

@@ -2,6 +2,9 @@
 rem ============================================================
 rem ERP Demo - Database init script (local MySQL: root / empty password)
 rem ============================================================
+setlocal
+cd /d "%~dp0.."
+if errorlevel 1 exit /b 1
 set MYSQL=mysql -h 127.0.0.1 -P 3306 -uroot
 
 echo [1/4] Creating database ry-cloud ...
